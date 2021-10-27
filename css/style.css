@@ -710,6 +710,9 @@ body.scroll-lock {
   min-width: 115px;
   cursor: pointer
 }
+.registration-form__birth-month optgroup {
+  font-size: 8px
+}
 .registration-form__birth-month option {
   color: #fff
 }
@@ -2120,6 +2123,9 @@ body.scroll-lock {
   min-width: 100%;
   cursor: pointer
 }
+.basic__birth-month optgroup {
+  font-size: 8px
+}
 .basic__birth-month option {
   color: #fff
 }
@@ -2804,6 +2810,9 @@ body.scroll-lock {
     -ms-flex-item-align: center;
     align-self: center
   }
+  .registration-form__birth-month optgroup {
+    display: none
+  }
   .header-nav__content {
     height: 70px
   }
@@ -3155,6 +3164,9 @@ body.scroll-lock {
   }
   .settings-form {
     margin: 50px 0 0 0
+  }
+  .basic__birth-month optgroup {
+    display: none
   }
   .personal__textarea::-webkit-scrollbar {
     display: none
