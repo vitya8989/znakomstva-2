@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Профили</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+	<div class="wrapper profile__wrapper">
+		<div class="top-bar">
+	<p class="top-bar__title">Знакомства по всему миру</p>
+	<div class="top-bar__select-country select-country">
+		<div class="select-country__img">
+			<img src="img/icons/usa-flag.svg" alt="">
+		</div>
+		<div class="select-country__select">
+			<select name="country" id="country">
+				<option value="USA" selected>Америка</option>
+				<option value="Russia">Россия</option>
+			</select>
+		</div>
+	</div>
+</div>
+		<header class="header-nav">
+	<div class="header-nav__container container">
+		<div class="header-nav__content">
+			<div class="header-nav__logo">
+				<div class="header-nav__img">
+					<img src="img/icons/love-birds.png" alt="">
+				</div>
+				<p class="header-nav__text">Znakomstva.com</p>
+			</div>
+			<nav class="header-nav__nav nav">
+				<ul class="nav__links">
+					<li class="nav__item"><a href="main.html" class="nav__link">Анкеты</a></li>
+					<li class="nav__item"><a href="-" class="open-messages">Сообщения</a></li>
+					<li class="nav__item"><a href="tariffs.html" class="nav__link">Подписка</a></li>
+				</ul>
+				<div class="header-nav__select-box select-location-box">
+					<select name="select-location" class="select-location">
+						<option value="russia" selected>Россия</option>
+						<option value="usa">Америка</option>
+					</select>
+				</div>
+			</nav>
+			<div class="header-nav__user user">
+				<div class="header-nav__icons">
+					<a href=# class="header-nav__search">
+					</a>
+					<a href=# class="header-nav__bell">
+						<span>123</span>
+					</a>
+				</div>
+				<div class="user__photo">
+					<a href="settings.html"><img src="img/icons/user-photo.jpg" alt=""></a>
+				</div>
+				<p class="user__name">Иван Иванов</p>
+				<div class="header-nav__burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="profile">
+			<div class="profile__container container">
+				<div class="profile__content">
+					<div class="slider-profile__btn-prev swiper-button-prev"></div>
+					<div class="slider-profile__btn-next swiper-button-next"></div>
+					<div class="profile__slider slider-profile swiper-container">
+						<div class="slider-profile__wrapper swiper-wrapper">
+							<div class="slider-profile__slide profile-slide swiper-slide">
+								<div class="profile-slide__body">
+									<div class="profile-slide__main-photos profile-main-photos">
+										<div class="profile-main-photos__main-photo">
+											<div class="profile-main-photos__img active-photo">
+												<img src="img/profile/profile-small-photo1.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo2.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo3.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo4.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo4.jpg" alt="">
+											</div>
+											<button class="profile-main-photos__bookmark"></button>
+											<div class="profile-main-photos__btns">
+												<a href="main.html" class="profile-main-photos__btn-cross"></a>
+												<button class="profile-main-photos__btn-like"></button>
+											</div>
+										</div>
+										<div class="profile-main-photos__slider slider-profile-main-photos swiper-container">
+											<div class="slider-profile-main-photos__wrapper swiper-wrapper">
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo1.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo2.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo3.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo4.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo4.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="profile-slide__info profile-info">
+										<div class="profile-info__name-wrapper">
+											<h2 class="profile-info__name">Виктор 22<span class="profile-info__name-online online"></span>
+											</h2>
+											<div class="card__location profile">
+												<img src="img/icons/russian-flag.svg" alt="">
+												<span>Россия</span>
+											</div>
+										</div>
+										<button class="profile-info__btn rot-360 greet-btn">Поприветствовать</button>
+										<div class="profile-info__specifications specifications">
+											<p class="specifications__text specifications__bid"><span>Ставка</span><span class="specifications__line"></span><span>15 654 руб</span></p>
+											<p class="specifications__text"><span>Рост</span><span class="specifications__line"></span><span>186 см</span>
+											</p>
+											<p class="specifications__text"><span>Вес</span><span class="specifications__line"></span><span>80 кг</span>
+											</p>
+											<p class="specifications__text"><span>Цвет глаз</span><span class="specifications__line"></span><span>Голубые</span>
+											</p>
+											<p class="specifications__text"><span>Цвет волос</span><span class="specifications__line"></span><span>Светлые</span>
+											</p>
+											<p class="specifications__text"><span>Цель знакомства</span><span class="specifications__line"></span><span>Пока не
+													знаю</span>
+											</p>
+										</div>
+										<div class="profile-info__about-self about-self">
+											<h3 class="about-self__title">О себе</h3>
+											<p class="about-self__text">Задача организации, в особенности же сложившаяся структура
+												организации представляет
+												собой интересный эксперимент
+												проверки модели развития.
+											</p>
+											<p class="about-self__text">Задача организации, в особенности же постоянный
+												количественный рост и сфера нашей
+												активности играет важную роль
+												в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+										</div>
+										<p class="profile-info__on-site">На сайте с 21.08.2021</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider-profile__slide profile-slide swiper-slide">
+								<div class="profile-slide__body">
+									<div class="profile-slide__main-photos profile-main-photos">
+										<div class="profile-main-photos__main-photo">
+											<div class="profile-main-photos__img active-photo">
+												<img src="img/profile/profile-small-photo1.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo2.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo3.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo4.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo4.jpg" alt="">
+											</div>
+											<button class="profile-main-photos__bookmark"></button>
+											<div class="profile-main-photos__btns">
+												<a href="main.html" class="profile-main-photos__btn-cross"></a>
+												<button class="profile-main-photos__btn-like"></button>
+											</div>
+										</div>
+										<div class="profile-main-photos__slider slider-profile-main-photos swiper-container">
+											<div class="slider-profile-main-photos__wrapper swiper-wrapper">
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo1.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo2.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo3.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo4.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo4.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="profile-slide__info profile-info">
+										<div class="profile-info__name-wrapper">
+											<h2 class="profile-info__name">Виктор 22<span class="profile-info__name-online online"></span>
+											</h2>
+											<div class="card__location profile">
+												<img src="img/icons/russian-flag.svg" alt="">
+												<span>Россия</span>
+											</div>
+										</div>
+										<button class="profile-info__btn rot-360 greet-btn">Поприветствовать</button>
+										<div class="profile-info__specifications specifications">
+											<p class="specifications__text specifications__bid"><span>Ставка</span><span class="specifications__line"></span><span>15 654 руб</span></p>
+											<p class="specifications__text"><span>Рост</span><span class="specifications__line"></span><span>186 см</span>
+											</p>
+											<p class="specifications__text"><span>Вес</span><span class="specifications__line"></span><span>80 кг</span>
+											</p>
+											<p class="specifications__text"><span>Цвет глаз</span><span class="specifications__line"></span><span>Голубые</span>
+											</p>
+											<p class="specifications__text"><span>Цвет волос</span><span class="specifications__line"></span><span>Светлые</span>
+											</p>
+											<p class="specifications__text"><span>Цель знакомства</span><span class="specifications__line"></span><span>Пока не
+													знаю</span>
+											</p>
+										</div>
+										<div class="profile-info__about-self about-self">
+											<h3 class="about-self__title">О себе</h3>
+											<p class="about-self__text">Задача организации, в особенности же сложившаяся структура
+												организации представляет
+												собой интересный эксперимент
+												проверки модели развития.
+											</p>
+											<p class="about-self__text">Задача организации, в особенности же постоянный
+												количественный рост и сфера нашей
+												активности играет важную роль
+												в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+										</div>
+										<p class="profile-info__on-site">На сайте с 21.08.2021</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider-profile__slide profile-slide swiper-slide">
+								<div class="profile-slide__body">
+									<div class="profile-slide__main-photos profile-main-photos">
+										<div class="profile-main-photos__main-photo">
+											<div class="profile-main-photos__img active-photo">
+												<img src="img/profile/profile-small-photo1.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo2.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo3.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo4.jpg" alt="">
+											</div>
+											<div class="profile-main-photos__img">
+												<img src="img/profile/profile-small-photo4.jpg" alt="">
+											</div>
+											<button class="profile-main-photos__bookmark"></button>
+											<div class="profile-main-photos__btns">
+												<a href="main.html" class="profile-main-photos__btn-cross"></a>
+												<button class="profile-main-photos__btn-like"></button>
+											</div>
+										</div>
+										<div class="profile-main-photos__slider slider-profile-main-photos swiper-container">
+											<div class="slider-profile-main-photos__wrapper swiper-wrapper">
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo1.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo2.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo3.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo4.jpg" alt="">
+													</div>
+												</div>
+												<div class="slider-profile-main-photos__slide profile-main-photos-slide swiper-slide">
+													<div class="profile-main-photos-slide__photo">
+														<img src="img/profile/profile-small-photo4.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="profile-slide__info profile-info">
+										<div class="profile-info__name-wrapper">
+											<h2 class="profile-info__name">Виктор 22<span class="profile-info__name-online online"></span>
+											</h2>
+											<div class="card__location profile">
+												<img src="img/icons/russian-flag.svg" alt="">
+												<span>Россия</span>
+											</div>
+										</div>
+										<button class="profile-info__btn rot-360 greet-btn">Поприветствовать</button>
+										<div class="profile-info__specifications specifications">
+											<p class="specifications__text specifications__bid"><span>Ставка</span><span class="specifications__line"></span><span>15 654 руб</span></p>
+											<p class="specifications__text"><span>Рост</span><span class="specifications__line"></span><span>186 см</span>
+											</p>
+											<p class="specifications__text"><span>Вес</span><span class="specifications__line"></span><span>80 кг</span>
+											</p>
+											<p class="specifications__text"><span>Цвет глаз</span><span class="specifications__line"></span><span>Голубые</span>
+											</p>
+											<p class="specifications__text"><span>Цвет волос</span><span class="specifications__line"></span><span>Светлые</span>
+											</p>
+											<p class="specifications__text"><span>Цель знакомства</span><span class="specifications__line"></span><span>Пока не
+													знаю</span>
+											</p>
+										</div>
+										<div class="profile-info__about-self about-self">
+											<h3 class="about-self__title">О себе</h3>
+											<p class="about-self__text">Задача организации, в особенности же сложившаяся структура
+												организации представляет
+												собой интересный эксперимент
+												проверки модели развития.
+											</p>
+											<p class="about-self__text">Задача организации, в особенности же постоянный
+												количественный рост и сфера нашей
+												активности играет важную роль
+												в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+										</div>
+										<p class="profile-info__on-site">На сайте с 21.08.2021</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__content">
+			<ul class="footer__links">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Поддержка</a></li>
+				<li><a href="#">Советы</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Правила оплаты</a></li>
+			</ul>
+			<div class="footer__politic">
+				<a href="page-404.html">Политика обработки персональных данных</a>
+			</div>
+			<div class="footer__select">
+				<select name="language" id="language">
+					<option value="ru" selected>RU</option>
+					<option value="en">EN</option>
+				</select>
+			</div>
+			<div class="footer__copyright">
+				<span>© Company 2021</span>
+			</div>
+		</div>
+	</div>
+</footer>
+		<div class="chat">
+	<div class="chat__body">
+		<header class="header-nav">
+	<div class="header-nav__container container">
+		<div class="header-nav__content">
+			<div class="header-nav__logo">
+				<div class="header-nav__img">
+					<img src="img/icons/love-birds.png" alt="">
+				</div>
+				<p class="header-nav__text">Znakomstva.com</p>
+			</div>
+			<nav class="header-nav__nav nav">
+				<ul class="nav__links">
+					<li class="nav__item"><a href="main.html" class="nav__link">Анкеты</a></li>
+					<li class="nav__item"><a href="-" class="open-messages">Сообщения</a></li>
+					<li class="nav__item"><a href="tariffs.html" class="nav__link">Подписка</a></li>
+				</ul>
+				<div class="header-nav__select-box select-location-box">
+					<select name="select-location" class="select-location">
+						<option value="russia" selected>Россия</option>
+						<option value="usa">Америка</option>
+					</select>
+				</div>
+			</nav>
+			<div class="header-nav__user user">
+				<div class="header-nav__icons">
+					<a href=# class="header-nav__search">
+					</a>
+					<a href=# class="header-nav__bell">
+						<span>123</span>
+					</a>
+				</div>
+				<div class="user__photo">
+					<a href="settings.html"><img src="img/icons/user-photo.jpg" alt=""></a>
+				</div>
+				<p class="user__name">Иван Иванов</p>
+				<div class="header-nav__burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<div class="chat__users chat-users">
+			<div class="chat-users__wrapper">
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon1.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Марина</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+					<span class="chat-user__new-message-count">1</span>
+				</div>
+				<div class="chat-users__user chat-user active-chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon2.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Алёна<span class="chat-user__online online"></span></p>
+						<p class="chat-user__last-message">Чем занимаешься?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon3.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Вика</p>
+						<p class="chat-user__last-message">Хорошо. До встречи 👋
+						</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chat__messages chat-messages">
+			<div class="chat-messages__wrapper">
+				<p class="chat-messages__user to-chat-users"><button class="to-chat-users__btn"></button> Алена <span
+						class="chat-messages__user-age">22</span><span class="chat-user__online online"></span></p>
+				<div class="chat-messages__window">
+					<div class="chat-messages__message incoming">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-user-icon2.jpg" alt="">
+						</div>
+						<p class="chat-messages__text pink-message">Привет<br>
+							Текст сообщения будет тут</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Привет<br>
+							Ответ на сообщение будет тут</p>
+					</div>
+					<div class="chat-messages__message incoming">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-user-icon2.jpg" alt="">
+						</div>
+						<p class="chat-messages__text pink-message">Еще одно сообщение в одну строку</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Ответ на сообщение в несколько строк
+							<br>Тут вторая строка
+							<br>Тут будет третья
+						</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Ответ на сообщение в несколько строк
+							<br>Тут вторая строка
+							<br>Тут будет третья
+						</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Ответ на сообщение в несколько строк
+							<br>Тут вторая строка
+							<br>Тут будет третья
+						</p>
+					</div>
+				</div>
+				<div class="chat-messages__input-box input-box">
+					<textarea name="messages" rows="1" class="chat-messages__input text-input"
+						placeholder="Написать сообщение..."></textarea>
+					<button class="chat-messages__submit"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/profile.js"></script>
+</body>
+
+</html>

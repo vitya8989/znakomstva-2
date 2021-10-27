@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Настройки профиля</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper settings__wrapper">
+		<div class="top-bar">
+	<p class="top-bar__title">Знакомства по всему миру</p>
+	<div class="top-bar__select-country select-country">
+		<div class="select-country__img">
+			<img src="img/icons/usa-flag.svg" alt="">
+		</div>
+		<div class="select-country__select">
+			<select name="country" id="country">
+				<option value="USA" selected>Америка</option>
+				<option value="Russia">Россия</option>
+			</select>
+		</div>
+	</div>
+</div>
+		<header class="header-nav">
+	<div class="header-nav__container container">
+		<div class="header-nav__content">
+			<div class="header-nav__logo">
+				<div class="header-nav__img">
+					<img src="img/icons/love-birds.png" alt="">
+				</div>
+				<p class="header-nav__text">Znakomstva.com</p>
+			</div>
+			<nav class="header-nav__nav nav">
+				<ul class="nav__links">
+					<li class="nav__item"><a href="main.html" class="nav__link">Анкеты</a></li>
+					<li class="nav__item"><a href="-" class="open-messages">Сообщения</a></li>
+					<li class="nav__item"><a href="tariffs.html" class="nav__link">Подписка</a></li>
+				</ul>
+				<div class="header-nav__select-box select-location-box">
+					<select name="select-location" class="select-location">
+						<option value="russia" selected>Россия</option>
+						<option value="usa">Америка</option>
+					</select>
+				</div>
+			</nav>
+			<div class="header-nav__user user">
+				<div class="header-nav__icons">
+					<a href=# class="header-nav__search">
+					</a>
+					<a href=# class="header-nav__bell">
+						<span>123</span>
+					</a>
+				</div>
+				<div class="user__photo">
+					<a href="settings.html"><img src="img/icons/user-photo.jpg" alt=""></a>
+				</div>
+				<p class="user__name">Иван Иванов</p>
+				<div class="header-nav__burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="settings">
+			<div class="settings__container container">
+				<div class="settings__content">
+					<nav class="settings__nav settings-nav">
+	<ul class="settings-nav__links">
+		<li class="settings-nav__item"><a href="settings.html" class="settings-nav__link">Профиль</a>
+		</li>
+		<li class="settings-nav__item"><a href="favorite.html" class="settings-nav__link">Избранное</a>
+		</li>
+		<li class="settings-nav__item"><a href="personal-account.html" class="settings-nav__link">Личный счет</a></li>
+		<li class="settings-nav__item"><a href="index.html" class="settings-nav__link">Выйти</a></li>
+	</ul>
+</nav>
+					<div class="settings__body">
+						<h2 class="settings__title">Профиль</h2>
+						<div class="settings__profile">
+							<form name="settings-form" class="settings-form-profile" method="post" onsubmit="return validateEmail()">
+								<div class="settings__images">
+									<label for="main-image-input" class="settings__main-image">
+										<input type="file" name="main-image-input" id="main-image-input">
+									</label>
+									<div class="settings__small-images">
+										<label class="settings__small-image" for="small-image-input-1">
+											<input type="file" name="small-image-input-1" id="small-image-input-1">
+										</label>
+										<label class="settings__small-image" for="small-image-input-2">
+											<input type="file" name="small-image-input-2" id="small-image-input-2">
+										</label>
+										<label class="settings__small-image" for="small-image-input-3">
+											<input type="file" name="small-image-input-3" id="small-image-input-3">
+										</label>
+									</div>
+								</div>
+								<div class="settings__form settings-form">
+									<div class="settings-form__body">
+										<div class="settings-form__basic basic">
+											<h3 class="basic__title">Основная информация</h3>
+											<div class="basic__name flexspbtw">
+												<span>Имя</span>
+												<div class="basic__name-box input-box settings__input-box">
+													<input type="text" class="basic__name-input text-input" name="name" placeholder="Ваше имя">
+												</div>
+											</div>
+											<div class="basic__date-of-birth flexspbtw">
+												<span>Дата рождения</span>
+												<div class="basic__row">
+													<div class="basic__birth-day-box input-box">
+														<input type="text" class="basic__birth-day text-input" name="birth-day" placeholder="День">
+													</div>
+													<div class="basic__birth-month-box input-box">
+														<select name="birthday-month" class="basic__birth-month">
+															<option value="" selected hidden>Месяц</option>
+															<option value="january">Январь</option>
+															<option value="february">Февраль</option>
+															<option value="march">Март</option>
+															<option value="april">Апрель</option>
+															<option value="may">Май</option>
+															<option value="june">Июнь</option>
+															<option value="july">Июль</option>
+															<option value="august">Август</option>
+															<option value="september">Сентябрь</option>
+															<option value="october">Октябрь</option>
+															<option value="november">Ноябрь</option>
+															<option value="december">Декабрь</option>
+														</select>
+													</div>
+													<div class="basic__birth-year-box input-box">
+														<input type="text" class="basic__birth-year text-input" name="birth-year" placeholder="Год">
+													</div>
+												</div>
+											</div>
+											<div class="basic__gender flexspbtw">
+												<span>Пол</span>
+												<div class="basic__gender-row">
+													<input type="radio" id="male-gender" name="gender">
+													<label for="male-gender" class="male-label">
+														<img src="img/icons/male.svg" alt="">
+													</label>
+													<input type="radio" id="female-gender" name="gender">
+													<label for="female-gender" class="female-label">
+														<img src="img/icons/female.svg" alt="">
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="settings-form__personal personal">
+											<h3 class="personal__title">Личная информация</h3>
+											<div class="personal__height flexspbtw">
+												<span>Рост</span>
+												<div class="personal__height-box input-box settings__input-box">
+													<select name="height" class="personal__select">
+														<option value="" selected hidden>Предпочитаю не отвечать</option>
+														<optgroup>
+															<option value="178sm">178 см</option>
+														</optgroup>
+														<optgroup>
+															<option value="179sm">179 см</option>
+														</optgroup>
+														<optgroup>
+															<option value="180sm">180 см</option>
+														</optgroup>
+														<optgroup></optgroup>
+													</select>
+												</div>
+											</div>
+											<div class="personal__weight flexspbtw">
+												<span>Вес</span>
+												<div class="personal__weight-box input-box settings__input-box">
+													<select name="weight" class="personal__select">
+														<option value="" selected hidden>Предпочитаю не отвечать</option>
+														<option value="70kg">70 кг</option>
+														<option value="71kg">71 кг</option>
+														<option value="72kg">72 кг</option>
+													</select>
+												</div>
+											</div>
+											<div class="personal__hair flexspbtw">
+												<span>Цвет волос</span>
+												<div class="personal__hair-box input-box settings__input-box">
+													<select name="hair" class="personal__select">
+														<option value="" selected hidden>Предпочитаю не отвечать</option>
+														<option value="blond">Блонд</option>
+														<option value="brunet">Брюнет</option>
+														<option value="orange">Рыжий</option>
+													</select>
+												</div>
+											</div>
+											<div class="personal__eyes flexspbtw">
+												<span>Цвет глаз</span>
+												<div class="personal__eyes-box input-box settings__input-box">
+													<select name="eyes" class="personal__select">
+														<option value="" selected hidden>Предпочитаю не отвечать</option>
+														<option value="green">Зеленые</option>
+														<option value="blue">Голубые</option>
+														<option value="brown">Карие</option>
+													</select>
+												</div>
+											</div>
+											<div class="personal__purpose flexspbtw">
+												<span>Цель знакомства</span>
+												<div class="personal__purpose-box input-box settings__input-box">
+													<select name="purpose" class="white-select personal__select">
+														<option value="don't know" selected>Пока не знаю</option>
+														<option value="speak">Общение</option>
+														<option value="flirt">Флирт</option>
+													</select>
+												</div>
+											</div>
+											<div class="personal__about">
+												<span>О себе</span>
+												<div class="personal__textarea-box">
+													<textarea name="about" placeholder="Напишите о себе" class="personal__textarea"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="settings-form__account account">
+											<h3 class="account__title">Аккаунт</h3>
+											<div class="account__email flexspbtw">
+												<span>E-mail</span>
+												<div class="account__email-box email-box input-box settings__input-box">
+													<input type="text" class="account__email-input email text-input" name="email" placeholder="Введите электронную почту">
+												</div>
+											</div>
+											<div class="account__password flexspbtw">
+												<span>Пароль</span>
+												<div class="account__password-box password-box input-box settings__input-box">
+													<input class="account__password-input password text-input" type="password" name="password" placeholder="Введите пароль">
+													<a href="#" class="password-control"></a>
+												</div>
+											</div>
+										</div>
+										<div class="settings-form__submit-box form-btn-box">
+											<input type="submit" value="Сохранить" class="settings-form__submit form-btn rot-360 b-orange">
+										</div>
+									</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</main>
+	<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__content">
+			<ul class="footer__links">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Поддержка</a></li>
+				<li><a href="#">Советы</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Правила оплаты</a></li>
+			</ul>
+			<div class="footer__politic">
+				<a href="page-404.html">Политика обработки персональных данных</a>
+			</div>
+			<div class="footer__select">
+				<select name="language" id="language">
+					<option value="ru" selected>RU</option>
+					<option value="en">EN</option>
+				</select>
+			</div>
+			<div class="footer__copyright">
+				<span>© Company 2021</span>
+			</div>
+		</div>
+	</div>
+</footer>
+	<div class="chat">
+	<div class="chat__body">
+		<header class="header-nav">
+	<div class="header-nav__container container">
+		<div class="header-nav__content">
+			<div class="header-nav__logo">
+				<div class="header-nav__img">
+					<img src="img/icons/love-birds.png" alt="">
+				</div>
+				<p class="header-nav__text">Znakomstva.com</p>
+			</div>
+			<nav class="header-nav__nav nav">
+				<ul class="nav__links">
+					<li class="nav__item"><a href="main.html" class="nav__link">Анкеты</a></li>
+					<li class="nav__item"><a href="-" class="open-messages">Сообщения</a></li>
+					<li class="nav__item"><a href="tariffs.html" class="nav__link">Подписка</a></li>
+				</ul>
+				<div class="header-nav__select-box select-location-box">
+					<select name="select-location" class="select-location">
+						<option value="russia" selected>Россия</option>
+						<option value="usa">Америка</option>
+					</select>
+				</div>
+			</nav>
+			<div class="header-nav__user user">
+				<div class="header-nav__icons">
+					<a href=# class="header-nav__search">
+					</a>
+					<a href=# class="header-nav__bell">
+						<span>123</span>
+					</a>
+				</div>
+				<div class="user__photo">
+					<a href="settings.html"><img src="img/icons/user-photo.jpg" alt=""></a>
+				</div>
+				<p class="user__name">Иван Иванов</p>
+				<div class="header-nav__burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<div class="chat__users chat-users">
+			<div class="chat-users__wrapper">
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon1.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Марина</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+					<span class="chat-user__new-message-count">1</span>
+				</div>
+				<div class="chat-users__user chat-user active-chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon2.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Алёна<span class="chat-user__online online"></span></p>
+						<p class="chat-user__last-message">Чем занимаешься?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon3.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Вика</p>
+						<p class="chat-user__last-message">Хорошо. До встречи 👋
+						</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+				<div class="chat-users__user chat-user">
+					<div class="chat-user__photo">
+						<img src="img/chat/chat-user-icon4.jpg" alt="">
+					</div>
+					<div class="chat-user__info">
+						<p class="chat-user__name">Анастасия</p>
+						<p class="chat-user__last-message">Привет! Как дела?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chat__messages chat-messages">
+			<div class="chat-messages__wrapper">
+				<p class="chat-messages__user to-chat-users"><button class="to-chat-users__btn"></button> Алена <span
+						class="chat-messages__user-age">22</span><span class="chat-user__online online"></span></p>
+				<div class="chat-messages__window">
+					<div class="chat-messages__message incoming">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-user-icon2.jpg" alt="">
+						</div>
+						<p class="chat-messages__text pink-message">Привет<br>
+							Текст сообщения будет тут</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Привет<br>
+							Ответ на сообщение будет тут</p>
+					</div>
+					<div class="chat-messages__message incoming">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-user-icon2.jpg" alt="">
+						</div>
+						<p class="chat-messages__text pink-message">Еще одно сообщение в одну строку</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Ответ на сообщение в несколько строк
+							<br>Тут вторая строка
+							<br>Тут будет третья
+						</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Ответ на сообщение в несколько строк
+							<br>Тут вторая строка
+							<br>Тут будет третья
+						</p>
+					</div>
+					<div class="chat-messages__message outgoing">
+						<div class="chat-messages__user-icon">
+							<img src="img/chat/chat-my-icon.jpg" alt="">
+						</div>
+						<p class="chat-messages__text blue-message">Ответ на сообщение в несколько строк
+							<br>Тут вторая строка
+							<br>Тут будет третья
+						</p>
+					</div>
+				</div>
+				<div class="chat-messages__input-box input-box">
+					<textarea name="messages" rows="1" class="chat-messages__input text-input"
+						placeholder="Написать сообщение..."></textarea>
+					<button class="chat-messages__submit"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<script src="js/settings.js"></script>
+</body>
+
+</html>

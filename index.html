@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Znakomstva.com</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper index__wrapper">
+		<div class="top-bar">
+	<p class="top-bar__title">Знакомства по всему миру</p>
+	<div class="top-bar__select-country select-country">
+		<div class="select-country__img">
+			<img src="img/icons/usa-flag.svg" alt="">
+		</div>
+		<div class="select-country__select">
+			<select name="country" id="country">
+				<option value="USA" selected>Америка</option>
+				<option value="Russia">Россия</option>
+			</select>
+		</div>
+	</div>
+</div>
+		<div class="left-blob blob"><svg viewBox="0 0 200 200">
+		<defs>
+			<linearGradient id="gradient1" gradientTransform="rotate(90)">
+				<stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+				<stop id="gradientStop2" offset="100%" stop-color="var(--stopColor)" />
+			</linearGradient>
+		</defs>
+		<path class="path" d="" fill="url('#gradient1')"></path>
+	</svg></div>
+		<div class="right-blob blob"><svg viewBox="0 0 200 200">
+		<defs>
+			<linearGradient id="gradient2" gradientTransform="rotate(90)">
+				<stop id="gradientStop3" offset="0%" stop-color="var(--startColor)" />
+				<stop id="gradientStop4" offset="100%" stop-color="var(--stopColor)" />
+			</linearGradient>
+		</defs>
+		<path class="path" d="" fill="url('#gradient2')"></path>
+	</svg></div>
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__content">
+					<div class="header__logo">
+						<div class="header__img">
+							<img src="img/icons/love-birds.png" alt="">
+						</div>
+						<p class="header__text">Znakomstva.com</p>
+					</div>
+					<div class="header__link">
+						<span class="header__link2">Впервые здесь?</span>
+						<div class="header__link-border rot-360">
+							<a href="registration.html">Регистрация</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="login">
+			<div class="login__container container">
+				<div class="login__content">
+					<h1 class="login__title">Знакомства без преград</h1>
+					<p class="login__subtitle">Для современного мира сплочённость команды профессионалов однозначно фиксирует
+						необходимость системы обучения кадров,
+						соответствующей насущным потребностям.</p>
+					<div class="login__form authorization-form">
+						<form method="post" name="authorization-form" onsubmit="return validateEmailAuth(event)">
+							<div class="authorization-form__email-box email-box input-box">
+								<input type="text" class="authorization-form__email email text-input" name="email" placeholder="Введите электронную почту">
+							</div>
+							<div class="authorization-form__password-box password-box input-box">
+								<input class="authorization-form__password password text-input" type="password" name="password" placeholder="Введите пароль">
+								<a href="#" class="password-control"></a>
+							</div>
+							<div class="authorization-form__submit-box form-btn-box">
+								<input type="submit" value="Войти" class="authorization-form__submit form-btn rot-360 b-orange">
+							</div>
+						</form>
+						<div class="forgot-password">
+							<a href="#" class="forgot-popup-open">Я не помню пароль</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__content">
+			<ul class="footer__links">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Поддержка</a></li>
+				<li><a href="#">Советы</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Правила оплаты</a></li>
+			</ul>
+			<div class="footer__politic">
+				<a href="page-404.html">Политика обработки персональных данных</a>
+			</div>
+			<div class="footer__select">
+				<select name="language" id="language">
+					<option value="ru" selected>RU</option>
+					<option value="en">EN</option>
+				</select>
+			</div>
+			<div class="footer__copyright">
+				<span>© Company 2021</span>
+			</div>
+		</div>
+	</div>
+</footer>
+		<div class="forgot-popup">
+			<div class="forgot-popup__body">
+				<h2 class="forgot-popup__title">Я не помню пароль</h2>
+				<p class="forgot-popup__subtitle">Введи свой email и мы вышлем тебе инструкции по изменению пароля</p>
+				<div class="forgot-popup__form forgot-form" onsubmit="return validateEmailForgot(event)">
+					<form method="post" name="forgot-form">
+						<div class="forgot-form__email-box email-box input-box">
+							<input type="text" class="forgot-form__email email text-input" name="email" placeholder="Введите электронную почту">
+						</div>
+						<div class="forgot-form__submit-box form-btn-box">
+							<input type="submit" value="Запросить новый пароль" class="forgot-form__submit form-btn rot-360 b-orange">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+	<script src="js/blobs.js" async type="module"></script>
+</body>
+
+</html>
