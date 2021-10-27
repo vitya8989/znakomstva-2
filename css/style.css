@@ -3166,7 +3166,7 @@ body.scroll-lock {
     display: none
   }
   .personal__select optgroup {
-    font-size: 0
+    display: none
   }
   .favorite__title {
     display: none
